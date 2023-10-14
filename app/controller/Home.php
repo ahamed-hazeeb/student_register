@@ -4,7 +4,7 @@ class Home extends Controller{
     function index(){
         $data=[];
         echo "This is home controller<br>";
-        $filename = "../app/views/nav.view.php";
+        $filename = "app/views/nav.view.php";
         require $filename;
         $user = new User;
 

@@ -6,6 +6,6 @@ if($_SERVER['SERVER_NAME']=='localhost'){
     define('DBHOST','localhost');
     define('DBUSER','root');
     define('DBPASS','');
-    define('ROOT','http://localhost/student_project/public');
+    define('ROOT','http://localhost/student_project');
 
 }

@@ -1,24 +1,24 @@
 <?php
 
 class App{
-    private $controller ='home';
+    private $controller ='student_register';
     private $method ='index';
 
 private function spiltURL(){
-    $URL = $_GET['url'] ?? 'home';
+    $URL = $_GET['url'] ?? 'student_register';
     $URL = explode("/",$URL);
     return $URL;
 }
 
 public function loadcontroller(){
     $URL=$this->spiltURL();
-$filename = "../app/controller/".ucfirst($URL[0]).".php";
+$filename = "app/controller/".ucfirst($URL[0]).".php";
     if(file_exists($filename)){
         require $filename;
         $this->controller=ucfirst($URL[0]);
     }
     else{
-        $filename = "../app/controller/_404.php";
+        $filename = "app/controller/_404.php";
         require $filename;
         $this->controller='_404';
         }

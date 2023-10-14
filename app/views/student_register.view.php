@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="<?=ROOT?>/assets/js/jquery-3.7.1.js"></script>
   <script type="text/javascript" src="<?=ROOT?>/assets/js/submit_form.js"></script>
-  <?php $filename = "../app/views/ajax.view.php";
+  <?php $filename = "app/views/ajax.view.php";
         require $filename;
 ?>
    
